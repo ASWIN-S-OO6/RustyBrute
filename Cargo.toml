@@ -1,0 +1,14 @@
+[package]
+name = "brute"
+version = "0.2.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "io-util", "net", "time", "sync", "signal"] }
+clap = { version = "4", features = ["derive"] }
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "http2", "cookies"] }
+russh = "0.63"
+ratatui = "0.29"
+anyhow = "1"
+log = "0.4"
+env_logger = "0.11"
